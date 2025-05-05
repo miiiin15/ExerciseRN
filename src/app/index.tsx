@@ -1,0 +1,1 @@
+// 애플리케이션의 진입점 파일. ReactDOM.render 또는 createRoot를 호출합니다.
