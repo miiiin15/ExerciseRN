@@ -1,0 +1,13 @@
+def dotenvFile = file("./.env") // .env 파일이 android/app과 같은 디렉토리에 있다면
+if (!dotenvFile.exists()) {
+    dotenvFile = file("../../.env") // .env 파일이 프로젝트 루트에 있다면
+}
+
+if (dotenvFile.exists()) {
+    dotenvFile.eachLine { line ->
+        def keyValue = line.split("=")
+        if (keyValue.length == 2) {
+            project.ext.set(keyValue[0].trim(), keyValue[1].trim())
+        }
+    }
+}

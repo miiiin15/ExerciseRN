@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# Environment files
+#
+.env
+
 # Xcode
 #
 build/
@@ -65,7 +69,6 @@ buck-out/
 
 
 # react-native
-package-lock.json
 ios/Podfile.lock
 ios/Gemfile.lock
 android/app/release*
