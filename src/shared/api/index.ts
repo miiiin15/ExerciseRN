@@ -1,1 +1,2 @@
 // 공통 API 설정의 진입점. 외부에서 API 호출 로직을 import할 때 사용됩니다.
+export { default as instance } from './customAxios';
