@@ -1,1 +1,2 @@
 // 공통 유틸리티 함수의 진입점. 외부에서 유틸리티를 import할 때 사용됩니다.
+export { default as Logger } from './Logger';
